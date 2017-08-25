@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "inlineSources": true,
+    "lib": ["es5","es6","dom"],
+    "target": "es6",
+    "module":"commonjs",
+    //如何处理模块
+    "moduleResolution": "node",
+    //给源码里的装饰器声明加上设计类型
+    "emitDecoratorMetadata": true,
+    //启用实验性的es装饰器
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    //生成.d.ts
+    "declaration": true
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}

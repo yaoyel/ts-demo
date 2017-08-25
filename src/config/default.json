@@ -1,0 +1,9 @@
+{
+    "Mysql": {
+        "host": "localhost",
+        "port": 3306,
+        "database": "frist",
+        "username": "root",
+        "password": "chrdwvr450G"
+    }
+}

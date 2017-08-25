@@ -1,0 +1,79 @@
+{
+  "rules": {
+    // enforces PascalCased class and interface names
+    "class-name": true,
+    // enforeces formatting rules for single-line comments
+    // check-space requires that all single-line comments must begin with a space, as // comment
+    // check-lowercase require that first non-whitespace character of comment must be lowercase,if applicable
+    // check-uppercase require that first non-whitespace character of a comment must be uppercase if applicable
+    "comment-format":[
+      true,
+      "check-space"
+    ],
+
+    // enforces indentation with tabs or space 缩进
+    "indent":[
+      true,
+      "spaces"
+    ],
+    //disallows duplicate variable declareations in the same block scope
+    "no-duplicate-variable": true,
+
+    //disallows eval function invocations
+    "no-eval": true,
+
+    //disallows internal module
+    "no-internal-module": true,
+
+    //disallow usage of the var keyword
+    "no-var-keyword": true,
+
+    //requires the specified token to be on the same line as the expression preceding them
+    //check-catch checks that catch is on the same line as the closing brace for try
+    "one-line":[
+      true,
+      "check-open-brace",//大括号
+      "check-whitespace"
+    ],
+
+    //requires single or double quotes for string literals
+    "quotemark":[
+      true,
+      "double"//enforeces double quotes
+    ],
+
+    //enforces consistent semicolon usage at the end of every statement
+    //强制结尾用分号
+    "semicolon": true,
+
+    //requires === and !== place of == and !=
+    "triple-equals":[true,"allow-null-check"],//allow-null-check allows ==and !=when comparing to null
+
+    //require or disallows whitespace for type definitions
+    //determines if a space is required or not before the colone in a type specifier
+    "typedef-whitespace":[
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    //checks variable names for various errors
+    "variable-name":[
+      true,
+      "ban-keywords"//disallows the use of certain typescript keyword as variable or parameter names
+    ],
+    //enforces whitespace style conventions
+    "whitespace":[
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ]
+  }
+}
