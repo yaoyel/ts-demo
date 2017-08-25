@@ -1,4 +1,4 @@
-# routing-controllers with koa demo
+#  ts-demo
 
 1. Install all dependencies:
 
@@ -6,13 +6,12 @@
     
 2. Run the project:
 
-    `npm start`
+    `ts-node app.js`
 
 3. Open in browser:
  
-    `http://localhost:3000/posts`
-
-### Using with older versions of node
-
-This project targets ES6. 
-You can target ES5, but you'll need to use es6-shim and install its typings.
+  Obtain token:  `http://localhost:3000/auth/token`;
+  verify token and get currentUser:   `http://localhost:3000/auth/userinfo`;
+  authorized user action:
+  `http://localhost:3000/users` 
+  
